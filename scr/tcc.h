@@ -25,7 +25,7 @@ public:
 
   Gyro(int pin);
 
-  void ReadRX());
+  void ReadRX();
   void ReadRY();
   void ReadRZ();
   void ReadAc();
@@ -44,6 +44,7 @@ public:
   Sen(int pin, String tipo);
 
   void Proximity();
+
 
 private:
 
