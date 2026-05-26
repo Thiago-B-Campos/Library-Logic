@@ -23,18 +23,22 @@ class Gyro {
 
 public:
 
-  Gyro(int pin);
+  Gyro(int pin,int pinn, bool ser);
 
   void ReadRX();
+  void ReadAX();
   void ReadRY();
+  void ReadAY();
   void ReadRZ();
-  void ReadAc();
+  void ReadAZ();
+  void ReadTemp();
 
 
 private:
 
   int _pin;
-
+  int _pinn;
+  bool _ser;
 };
 
 class Sen {
